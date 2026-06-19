@@ -1,0 +1,10 @@
+{
+  "java.project.referencedLibraries": [
+    "/opt/hadoop/share/hadoop/common/*.jar",
+    "/opt/hadoop/share/hadoop/common/lib/*.jar",
+    "/opt/hadoop/share/hadoop/mapreduce/*.jar",
+    "/opt/hadoop/share/hadoop/mapreduce/lib/*.jar",
+    "/opt/hadoop/share/hadoop/hdfs/*.jar",
+    "/opt/hadoop/share/hadoop/hdfs/lib/*.jar"
+  ]
+}
