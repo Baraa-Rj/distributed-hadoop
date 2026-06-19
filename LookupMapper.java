@@ -8,10 +8,10 @@ public class LookupMapper extends Mapper<LongWritable, Text, Text, Text> {
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] fields = value.toString().split(",");
         if (fields.length == 4) {
-            String id = fields[0];
+            String id = fields[0].trim();
             Text tgt = getTargetId();
             if (tgt != null && id.equals(tgt.toString())) {
-            context.write(new Text(id), new Text(fields[1] + "," + fields[2] + "," + fields[3]));
+            context.write(new Text(id), new Text(fields[1].trim() + "," + fields[2].trim() + "," + fields[3].trim()));
             }
         }
     }
